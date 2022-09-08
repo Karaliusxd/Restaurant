@@ -1,0 +1,130 @@
+@use "../1-helpers" as *;
+@use "../2-base" as *;
+
+.shop {
+  margin-bottom: 200px;
+  &__typography {
+    text-align: center;
+    margin-bottom: 120px;
+  }
+
+  &__title {
+    font-size: $title-desktop-L;
+    margin-bottom: 40px;
+  }
+  &__description {
+    font-size: $description-desktop-XL;
+    color: $red;
+  }
+  &__wrapper {
+    display: flex;
+  }
+  &__sidebar {
+    background: $red;
+    border-radius: 20px;
+    width: 30vw;
+    height: 1067px;
+    margin-left: 30px;
+  }
+  &__section {
+    padding: 24px;
+  }
+  &__category {
+    font-size: 16px;
+    margin-bottom: 28px;
+    margin-top: 40px;
+  }
+  &__links {
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  &__text {
+    color: $black;
+  }
+  &__divider {
+    height: 2px;
+    background-color: #000;
+    margin: 0px 20px;
+  }
+  &__order {
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+  &__total {
+    margin-bottom: 28px;
+  }
+  &__btn {
+    padding: em(11) em(0);
+    background-color: $black;
+    color: $text-01;
+    width: 110px;
+    border-radius: 10px;
+    border: none;
+  }
+  &__grid {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+  }
+  &__container {
+    text-align: center;
+    margin-top: 20px;
+    height: 290px;
+  }
+  &__pagination {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    li {
+      margin-top: 20px;
+    }
+    a {
+      margin-right: 50px;
+      color: $black;
+    }
+  }
+  &__name {
+    background-color: $red;
+    border-radius: 10px;
+    margin: 20px 35px 0px;
+    padding: 15px;
+  }
+  &__image {
+    margin-bottom: 10px;
+    img {
+      width: 158px;
+      height: 90px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+  }
+  &__content {
+    margin-bottom: 10px;
+    font-size: $description-desktop-S;
+  }
+  &__pcs {
+    margin-bottom: 10px;
+  }
+  &__price {
+    margin-bottom: 10px;
+    color: $red;
+  }
+  &__quantity {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+
+    i {
+      margin-top: 4px;
+    }
+  }
+  &__number {
+    font-size: $description-desktop-L;
+  }
+}

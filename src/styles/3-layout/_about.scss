@@ -1,0 +1,32 @@
+@use "../1-helpers" as *;
+@use "../2-base" as *;
+
+.about {
+  margin-bottom: 200px;
+  &__container {
+    display: flex;
+    margin: 0px 70px 120px;
+    gap: 86px;
+  }
+  &__background {
+    width: 218px;
+    height: 336px;
+    background: $red;
+    border-radius: 20px;
+  }
+  &__img {
+    margin-top: 50px;
+    margin-left: 30px;
+    width: 272px;
+    height: 215px;
+  }
+  &__typography {
+  }
+  &__title {
+    margin-bottom: em(12);
+    font-size: $title-desktop-L;
+  }
+  &__description {
+    line-height: 2;
+  }
+}

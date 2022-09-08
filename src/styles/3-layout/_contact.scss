@@ -1,0 +1,49 @@
+@use "../1-helpers" as *;
+@use "../2-base" as *;
+
+.contact {
+  background-color: $background-color;
+  margin-top: -4px;
+
+  &__typography {
+    text-align: center;
+    margin: 0px 70px;
+    color: $text-01;
+  }
+  &__title {
+    font-size: $title-desktop-L;
+    margin-bottom: 25px;
+  }
+  &__description {
+    font-size: $description-desktop-L;
+    line-height: 37px;
+    margin-bottom: 135px;
+  }
+  &__form {
+    margin: 0px 70px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    input {
+      width: 100%;
+      height: 37px;
+      margin-bottom: 24px;
+    }
+  }
+  &__textarea {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 70px;
+    textarea {
+      margin-bottom: 24px;
+    }
+  }
+  &__btn {
+    width: 220px;
+    padding: em(11) em(0);
+    background-color: $red;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 160px;
+  }
+}

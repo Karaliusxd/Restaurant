@@ -1,0 +1,30 @@
+@use "./function" as *;
+
+// Font sizes
+
+// Desktop
+$title-desktop-L: rem(64);
+$title-desktop-M: rem(48);
+$title-desktop-S: rem(24);
+$description-desktop-XL: rem(24);
+$description-desktop-L: rem(20);
+$description-desktop-M: rem(16);
+$description-desktop-S: rem(14);
+$nav-fonts: rem(16);
+$product-title-s: rem(12);
+$product-title-L: rem(16);
+$product-description-L: rem(14);
+
+// Mobile
+$title-mobile-L: rem(64);
+$title-mobile-S: rem(36);
+$description-mobile-L: rem(16);
+$description-mobile-S: rem(12);
+$footer-title-mobile: rem(24);
+$footer-description-mobile: rem(12);
+
+// General
+$btn-size: rem(24);
+
+// Footer
+$footer-size-L: rem(24);

@@ -1,0 +1,37 @@
+@use "../1-helpers" as *;
+@use "../2-base" as *;
+
+.footer {
+  height: 350px;
+  width: 100%;
+  background: rgb(41, 41, 41);
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: em(0) em(100);
+  }
+  &__description {
+    margin-bottom: em(5);
+  }
+
+  &__logo {
+    width: 300px;
+    img {
+      width: 64px;
+      height: 40px;
+      margin: em(55) em(0) em(20) em(0);
+    }
+  }
+  &__links {
+    margin: em(55) em(0) em(20) em(0);
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+  }
+  &__text {
+    font-size: $footer-size-L;
+  }
+}

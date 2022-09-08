@@ -1,0 +1,76 @@
+@use "../1-helpers" as *;
+@use "../2-base" as *;
+
+.nav {
+  background-color: $nav-light-bg;
+
+  &__list {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding: 21.5px 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo {
+    align-self: center;
+  }
+  &__item {
+    align-self: center;
+  }
+  &__text {
+    margin-right: 45px;
+    color: $text-02;
+  }
+  &__search {
+    position: relative;
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $black;
+    i {
+      width: auto;
+      height: auto;
+      margin-right: em(20);
+    }
+  }
+  .fa-sun {
+    color: #ee5007;
+  }
+  &__searchbox {
+    width: 300px;
+    height: 37px;
+    border: none;
+    border-radius: 10px;
+    padding: 0px 60px 0px 32px;
+    background-color: $search-bar;
+  }
+  &__notification {
+    font-size: 12px;
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 100%;
+    right: 3px;
+    top: -17px;
+    color: black;
+    box-shadow: 0 2px 25px 0px #000;
+  }
+  .fa-magnifying-glass {
+    position: absolute;
+    left: 0;
+    color: black;
+    margin-top: 10px;
+    margin-left: 9px;
+  }
+  .fa-basket-shopping {
+    position: absolute;
+    right: 0;
+    color: black;
+    padding-left: 23px;
+    border-left: 2px solid black;
+    margin-top: 10px;
+    margin-right: 15px;
+  }
+}

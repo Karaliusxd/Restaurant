@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
+     <!-- css -->
+     <link rel="stylesheet" href="./build/styles/main.css">
+     <title>Restaurant</title>
+     <!-- fontawesome -->
+     <script src="https://kit.fontawesome.com/126dd6e7fc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__logo">
+                <a href="#" class="nav__text">logo</a>
+                <!-- this should be img tag -->
+            </li>
+            <li class="nav__item">
+                <a href="#" class="nav__text">HOME</a>
+                <a href="#" class="nav__text">STORE</a>
+                <a href="#" class="nav__text">ABOUT</a>
+                <a href="#" class="nav__text">CONTACT</a>
+            </li>
+            <li class="nav__icon">
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-moon"></i>
+            </li>
+            <form class="nav__search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="nav__searchbox" type="search" placeholder="search here">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <div class="nav__notification">
+                    <p class="nav__number">1</p>
+                </div>
+            </form>
+        </ul>
+    </nav>
+
+    <section class="home">
+        <div class="home__container">
+            <div class="home__delivery">
+                <i class="fa-solid fa-truck"></i>
+                <p>DELIVERY</p>
+            </div>
+            <div class="home__typography">
+                <h1 class="home__title">FASTEST DELIVERY IN EVERY <span>CITY</span></h1>
+                <p class="home__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et facilis harum omnis ipsa. Magnam harum deserunt natus dolores unde, eum voluptate quis officia nisi enim facere voluptas dignissimos excepturi autem!</p>
+            </div>
+            <button class="home__btn">ORDER NOW</button>
+        </div>
+        <div class="home__container">
+            <h1 class="home__text">BEST BUY</h1>
+        <div class="home__wrapper">
+            <div class="home__background">
+                <div class="home__holder">
+                    <div class="home__dish">
+                        <img src="./build/image/dish/popular/eggs-and-bacon.png" alt="eggs-and-bacon" class="home__img">
+                        <h2 class="home__product">
+                                EGGS AND BACON <img src="./build/image/icon/emojione_fire.svg" alt="fire-icon">
+                        </h2>
+                        <h2 class="home__product">(1 meal)</h2>
+                        <p class="home__price">$150</p>
+                        <button class="home__cart">ADD TO CART</button>
+                    </div>
+                    <div class="home__dish">
+                        <img src="./build/image/dish/popular/fresh-salmon.png" alt="fresh-salmon" class="home__img">
+                        <h2 class="home__product">
+                                FRESH SALMON <img src="./build/image/icon/emojione_fire.svg" alt="fire-icon">
+                        </h2>
+                        <h2 class="home__product">(1 meal)</h2>
+                        <p class="home__price">$150</p>
+                        <button class="home__cart">ADD TO CART</button>
+                    </div>
+                    <div class="home__dish">
+                        <img src="./build/image/dish/popular/Grilled_Steak.png" alt="Grilled-Steak" class="home__img">
+                        <h2 class="home__product">
+                                GRILLED STEAK <img src="./build/image/icon/emojione_fire.svg" alt="fire-icon">
+                        </h2>
+                        <h2 class="home__product">(1 meal)</h2>
+                        <p class="home__price">$150</p>
+                        <button class="home__cart">ADD TO CART</button>
+                    </div>
+                    <div class="home__dish">
+                        <img src="./build/image/dish/popular/sushi.png" alt="sushi" class="home__img">
+                        <h2 class="home__product">
+                                SUSHI <img src="./build/image/icon/emojione_fire.svg" alt="fire-icon">
+                        </h2>
+                        <h2 class="home__product">(10 pcs)</h2>
+                        <p class="home__price">$150</p>
+                        <button class="home__cart">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="shop">
+
+        <div class="shop__typography">
+            <h1 class="shop__title">MENU</h1>
+            <p class="shop__description">Choose on our menu best offers</p>
+        </div>
+
+        <div class="shop__wrapper">
+
+            <div class="shop__sidebar">
+                <div class="shop__section">
+                    <h2 class="shop__category">
+                        CATEGORY 
+                        <i class="fa-solid fa-caret-right"></i> 
+                    </h2>
+                <ul class="shop__links">
+                    <li class="shop__items">
+                        <a class="shop__text" href="#">Product list</a>
+                        <a class="shop__text" href="#">Product list</a>
+                        <a class="shop__text" href="#">Product list</a>
+                        <a class="shop__text" href="#">Product list</a>
+                    </li>
+                </ul>
+                </div>
+                <div class="shop__divider"></div>
+                <div class="shop__section">
+                    <h2 class="shop__order">ORDERS</h2>
+                    <ul class="shop__links">
+                        <li class="shop__items">
+                            <a class="shop__text" href="#">Product amount</a>
+                            <a class="shop__text" href="#">Product amount</a>
+                            <a class="shop__text" href="#">Product amount</a>
+                            <a class="shop__text" href="#">Product amount</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="shop__divider"></div>
+                <div class="shop__section">
+                    <p class="shop__total"> TOTAL = 400$</p>
+                    <button class="shop__btn">BUY</button>
+                    <button class="shop__btn">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="shop__grid">
+                <div class="shop__container">
+                    <p class="shop__name">PRODUCT NAME</p>
+                    <div class="shop__image">
+                        <img src="./build/image/dish/general/Image-holder.png" alt="image-holder">
+                    </div>
+                    <p class="shop__content">PRODUCT DESCRIPTION</p>
+                    <p class="shop__pcs">(1 meal)</p>
+                    <p class="shop__price">$120</p>
+                    <div class="shop__quantity">
+                        <i class="fa-solid fa-circle-chevron-left"></i>
+                        <p class="shop__number">1</p>
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="shop__container">
+                    <p class="shop__name">PRODUCT NAME</p>
+                    <div class="shop__image">
+                        <img src="./build/image/dish/general/Image-holder.png" alt="image-holder">
+                    </div>
+                    <p class="shop__content">PRODUCT DESCRIPTION</p>
+                    <p class="shop__pcs">(1 meal)</p>
+                    <p class="shop__price">$120</p>
+                    <div class="shop__quantity">
+                        <i class="fa-solid fa-circle-chevron-left"></i>
+                        <p class="shop__number">1</p>
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="shop__container">
+                    <p class="shop__name">PRODUCT NAME</p>
+                    <div class="shop__image">
+                        <img src="./build/image/dish/general/Image-holder.png" alt="image-holder">
+                    </div>
+                    <p class="shop__content">PRODUCT DESCRIPTION</p>
+                    <p class="shop__pcs">(1 meal)</p>
+                    <p class="shop__price">$120</p>
+                    <div class="shop__quantity">
+                        <i class="fa-solid fa-circle-chevron-left"></i>
+                        <p class="shop__number">1</p>
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="shop__container">
+                    <p class="shop__name">PRODUCT NAME</p>
+                    <div class="shop__image">
+                        <img src="./build/image/dish/general/Image-holder.png" alt="image-holder">
+                    </div>
+                    <p class="shop__content">PRODUCT DESCRIPTION</p>
+                    <p class="shop__pcs">(1 meal)</p>
+                    <p class="shop__price">$120</p>
+                    <div class="shop__quantity">
+                        <i class="fa-solid fa-circle-chevron-left"></i>
+                        <p class="shop__number">1</p>
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="shop__container">
+                    <p class="shop__name">PRODUCT NAME</p>
+                    <div class="shop__image">
+                        <img src="./build/image/dish/general/Image-holder.png" alt="image-holder">
+                    </div>
+                    <p class="shop__content">PRODUCT DESCRIPTION</p>
+                    <p class="shop__pcs">(1 meal)</p>
+                    <p class="shop__price">$120</p>
+                    <div class="shop__quantity">
+                        <i class="fa-solid fa-circle-chevron-left"></i>
+                        <p class="shop__number">1</p>
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="shop__container">
+                    <p class="shop__name">PRODUCT NAME</p>
+                    <div class="shop__image">
+                        <img src="./build/image/dish/general/Image-holder.png" alt="image-holder">
+                    </div>
+                    <p class="shop__content">PRODUCT DESCRIPTION</p>
+                    <p class="shop__pcs">(1 meal)</p>
+                    <p class="shop__price">$120</p>
+                    <div class="shop__quantity">
+                        <i class="fa-solid fa-circle-chevron-left"></i>
+                        <p class="shop__number">1</p>
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="shop__container">
+                    <p class="shop__name">PRODUCT NAME</p>
+                    <div class="shop__image">
+                        <img src="./build/image/dish/general/Image-holder.png" alt="image-holder">
+                    </div>
+                    <p class="shop__content">PRODUCT DESCRIPTION</p>
+                    <p class="shop__pcs">(1 meal)</p>
+                    <p class="shop__price">$120</p>
+                    <div class="shop__quantity">
+                        <i class="fa-solid fa-circle-chevron-left"></i>
+                        <p class="shop__number">1</p>
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="shop__container">
+                    <p class="shop__name">PRODUCT NAME</p>
+                    <div class="shop__image">
+                        <img src="./build/image/dish/general/Image-holder.png" alt="image-holder">
+                    </div>
+                    <p class="shop__content">PRODUCT DESCRIPTION</p>
+                    <p class="shop__pcs">(1 meal)</p>
+                    <p class="shop__price">$120</p>
+                    <div class="shop__quantity">
+                        <i class="fa-solid fa-circle-chevron-left"></i>
+                        <p class="shop__number">1</p>
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="shop__container">
+                    <p class="shop__name">PRODUCT NAME</p>
+                    <div class="shop__image">
+                        <img src="./build/image/dish/general/Image-holder.png" alt="image-holder">
+                    </div>
+                    <p class="shop__content">PRODUCT DESCRIPTION</p>
+                    <p class="shop__pcs">(1 meal)</p>
+                    <p class="shop__price">$120</p>
+                    <div class="shop__quantity">
+                        <i class="fa-solid fa-circle-chevron-left"></i>
+                        <p class="shop__number">1</p>
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </div>
+                </div>  
+                <div class="shop__container">
+                    <p class="shop__name">PRODUCT NAME</p>
+                    <div class="shop__image">
+                        <img src="./build/image/dish/general/Image-holder.png" alt="image-holder">
+                    </div>
+                    <p class="shop__content">PRODUCT DESCRIPTION</p>
+                    <p class="shop__pcs">(1 meal)</p>
+                    <p class="shop__price">$120</p>
+                    <div class="shop__quantity">
+                        <i class="fa-solid fa-circle-chevron-left"></i>
+                        <p class="shop__number">1</p>
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </div>
+                </div>  
+                <div class="shop__container">
+                    <p class="shop__name">PRODUCT NAME</p>
+                    <div class="shop__image">
+                        <img src="./build/image/dish/general/Image-holder.png" alt="image-holder">
+                    </div>
+                    <p class="shop__content">PRODUCT DESCRIPTION</p>
+                    <p class="shop__pcs">(1 meal)</p>
+                    <p class="shop__price">$120</p>
+                    <div class="shop__quantity">
+                        <i class="fa-solid fa-circle-chevron-left"></i>
+                        <p class="shop__number">1</p>
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </div>
+                </div>  
+                <div class="shop__container">
+                    <p class="shop__name">PRODUCT NAME</p>
+                    <div class="shop__image">
+                        <img src="./build/image/dish/general/Image-holder.png" alt="image-holder">
+                    </div>
+                    <p class="shop__content">PRODUCT DESCRIPTION</p>
+                    <p class="shop__pcs">(1 meal)</p>
+                    <p class="shop__price">$120</p>
+                    <div class="shop__quantity">
+                        <i class="fa-solid fa-circle-chevron-left"></i>
+                        <p class="shop__number">1</p>
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </div>
+                </div>  
+                <div class="shop__pagination">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-chevron-left"></i></a>
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                        </li>
+                    </ul>
+                </div>  
+            </div>  
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about__container">
+            <div class="about__background">
+                <img class="about__img" src="./build/image/background/image-holder/image-holder02.png" alt="image-holder02">
+            </div>
+            <div class="about__typography">
+                <h1 class="about__title">PRODUCT NAME</h1>
+                <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum iaculis orci eros, et condimentum mi laoreet quis. Suspendisse quis posuere purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur dictum maximus. Sed nec nunc et erat venenatis tempus eu non arcu. Sed lacinia nisl quis diam eleifend pharetra. Mauris aliquam malesuada nibh nec sollicitudin. Duis non dictum libero. Suspendisse potenti. Cras sagittis lectus est, eget ultrices metus rutrum eget. Nullam id quam placerat, elementum felis semper, posuere nisl. Nam at tellus porttitor, interdum odio ac, porttitor lorem. Donec maximus massa finibus fringilla aliquam. In semper sem ut dignissim rhoncus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc nunc nunc, mattis eu velit non, dapibus porta diam.</p>
+            </div>
+        </div>
+        <div class="about__container">
+            <div class="about__background" style="order: 2;">
+                <img class="about__img" style="margin-left: -54px;" src="./build/image/background/image-holder/image-holder02.png" alt="image-holder02">
+            </div>
+            <div class="about__typography" style="order: 1;">
+                <h1 class="about__title" style="text-align: right;">PRODUCT NAME</h1>
+                <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum iaculis orci eros, et condimentum mi laoreet quis. Suspendisse quis posuere purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur dictum maximus. Sed nec nunc et erat venenatis tempus eu non arcu. Sed lacinia nisl quis diam eleifend pharetra. Mauris aliquam malesuada nibh nec sollicitudin. Duis non dictum libero. Suspendisse potenti. Cras sagittis lectus est, eget ultrices metus rutrum eget. Nullam id quam placerat, elementum felis semper, posuere nisl. Nam at tellus porttitor, interdum odio ac, porttitor lorem. Donec maximus massa finibus fringilla aliquam. In semper sem ut dignissim rhoncus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc nunc nunc, mattis eu velit non, dapibus porta diam.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="info__background">
+            <img src="./build/image/background/background-image.png" alt="Ramen.jpeg">
+            <div class="info__typography">
+                <h1 class="info__title">CONTACT US</h1>
+                <p class="info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus eros dolor, ac sagittis diam interdum quis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam eget consectetur purus, vitae ornare tellus. Pellentesque pulvinar luctus felis, ornare consequat magna consequat sit amet.</p>
+                <div class="info__container">
+                    <div class="info__wrapper">
+                        <div class="info__info">
+                            <h3>ADDRESS</h3>
+                            <p>Japan, 〒400-0224 Yamanashi, Minami-Alps, Iino Shinden, 1384</p>
+                        </div>
+                        <div class="info__info">
+                            <h3>EMAIL</h3>
+                            <p>123example@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info__wrapper">
+                        <div class="info__info">
+                            <h3>PHONE</h3>
+                            <p>+00 194 242 12455</p>
+                        </div>
+                        <div class="info__icon">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-discord"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="contact__typography">
+            <h1 class="contact__title">GET IN TOUCH</h1>
+            <p class="contact__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus eros dolor, ac sagittis diam interdum quis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam eget consectetur purus, vitae ornare tellus. Pellentesque pulvinar luctus felis, ornare consequat magna consequat sit amet.</p>
+        </div>
+        <form action="" class="contact__form">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+        </form>
+        <form action="" class="contact__form">
+            <input type="text" placeholder="Phone Number">
+            <input type="text" placeholder="Email">
+        </form>
+        <div class="contact__textarea">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Message..."></textarea>
+            <button class="contact__btn">SEND</button>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="footer__row">
+            <div class="footer__logo">
+                <img src="/build/img/Logo.png" alt="">
+                <p class="footer__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum tenetur quod voluptas, quo nesciunt atque voluptates cupiditate. Nesciunt ut eius, dicta doloribus animi exercitationem, porro nulla cum dolores perspiciatis quaerat.
+                </p>
+                <p class="footer__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </p>
+            </div>
+            <ul class="footer__links">
+                <h1 class="footer__title">TITLE</h1>
+                <li class="footer__items">
+                    <a href="#" class="footer__text">text</a>
+                    <a href="#" class="footer__text">text</a>
+                    <a href="#" class="footer__text">text</a>
+                    <a href="#" class="footer__text">text</a>
+                    <a href="#" class="footer__text">text</a>
+                </li>
+            </ul>
+            <ul class="footer__links">
+                <h1 class="footer__title">TITLE</h1>
+                <li class="footer__items">
+                    <a href="#" class="footer__text">text</a>
+                    <a href="#" class="footer__text">text</a>
+                    <a href="#" class="footer__text">text</a>
+                    <a href="#" class="footer__text">text</a>
+                    <a href="#" class="footer__text">text</a>
+                </li>
+            </ul>
+            <ul class="footer__links">
+                <h1 class="footer__title">TITLE</h1>
+                <li class="footer__items">
+                    <a href="#" class="footer__text">text</a>
+                    <a href="#" class="footer__text">text</a>
+                    <a href="#" class="footer__text">text</a>
+                    <a href="#" class="footer__text">text</a>
+                    <a href="#" class="footer__text">text</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <script src="./build/scripts/scripts/app.js"></script>
+    
+</body>
+</html>
