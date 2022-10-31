@@ -1,2 +1,2 @@
-
+const menuBtn=document.querySelector(".nav__menu"),slideNavMenu=document.querySelector(".nav");menuBtn.addEventListener("click",(function(){menuBtn.classList.contains("open")?(menuBtn.classList.remove("open"),slideNavMenu.classList.remove("slide-in")):(menuBtn.classList.add("open"),slideNavMenu.classList.add("slide-in"))}));
 //# sourceMappingURL=app.js.map

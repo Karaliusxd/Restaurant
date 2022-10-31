@@ -1,1 +1,1 @@
-{"version":3,"file":"scripts/app.js","names":[],"sources":[],"mappings":""}
+{"version":3,"file":"scripts/app.js","names":["menuBtn","document","querySelector","slideNavMenu","addEventListener","classList","contains","remove","add"],"sources":["scripts/app.js"],"mappings":"AAAA,MAAMA,QAAUC,SAASC,cAAc,cACjCC,aAAeF,SAASC,cAAc,QAE5CF,QAAQI,iBAAiB,SAAS,WAE3BJ,QAAQK,UAAUC,SAAS,SAC1BN,QAAQK,UAAUE,OAAO,QACzBJ,aAAaE,UAAUE,OAAO,cAK9BP,QAAQK,UAAUG,IAAI,QACtBL,aAAaE,UAAUG,IAAI,YAInC"}

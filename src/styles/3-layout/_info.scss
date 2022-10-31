@@ -4,7 +4,10 @@
 .info {
   &__background {
     position: relative;
+    height: 120vh;
     img {
+      position: absolute;
+      bottom: 0;
       width: 100%;
       height: 60vw;
       max-height: 700px;
@@ -18,10 +21,11 @@
   &__typography {
     margin: 0px 70px;
     position: absolute;
-    top: -64px;
+    top: 0px;
   }
   &__title {
     font-size: $title-desktop-L;
+    margin-bottom: em(12);
   }
   &__description {
     font-size: $description-desktop-L;
@@ -47,6 +51,41 @@
       margin-right: 20px;
       color: $black;
       font-size: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .info {
+    position: relative;
+
+    &__background {
+      position: relative;
+      height: 110vh;
+      img {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+    &__typography {
+      margin: 0px 15px;
+    }
+    &__title {
+      font-size: $title-mobile-L;
+    }
+    &__description {
+      font-size: $description-mobile-S;
+      line-height: 37px;
+      margin-bottom: 20px;
+    }
+
+    &__info {
+      h3 {
+        font-size: $title-mobile-XS;
+      }
+      p {
+        font-size: $description-mobile-S;
+      }
     }
   }
 }

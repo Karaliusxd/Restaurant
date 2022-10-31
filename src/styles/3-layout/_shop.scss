@@ -58,11 +58,13 @@
   }
   &__btn {
     padding: em(11) em(0);
+    margin-bottom: 10px;
     background-color: $black;
     color: $text-01;
     width: 110px;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
   }
   &__grid {
     height: auto;
@@ -122,9 +124,80 @@
 
     i {
       margin-top: 4px;
+      cursor: pointer;
     }
   }
   &__number {
     font-size: $description-desktop-L;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .shop {
+    &__typography {
+    }
+
+    &__title {
+      font-size: $title-mobile-L;
+    }
+    &__description {
+      font-size: $description-mobile-L;
+    }
+    &__wrapper {
+      display: block;
+    }
+    &__sidebar {
+      display: block;
+      width: 80vw;
+      height: 720px;
+    }
+    &__section {
+    }
+    &__category {
+    }
+    &__links {
+    }
+    &__items {
+    }
+    &__text {
+    }
+    &__divider {
+    }
+    &__order {
+    }
+    &__total {
+    }
+    &__btn {
+    }
+    &__grid {
+      display: block;
+    }
+    &__container {
+    }
+    &__pagination {
+      li {
+      }
+      a {
+        margin-right: 15px;
+      }
+    }
+    &__name {
+    }
+    &__image {
+      img {
+      }
+    }
+    &__content {
+    }
+    &__pcs {
+    }
+    &__price {
+    }
+    &__quantity {
+      i {
+      }
+    }
+    &__number {
+    }
   }
 }

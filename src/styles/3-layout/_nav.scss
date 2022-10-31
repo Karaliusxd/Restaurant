@@ -3,6 +3,9 @@
 
 .nav {
   background-color: $nav-light-bg;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 
   &__list {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
@@ -18,26 +21,13 @@
     align-self: center;
   }
   &__text {
-    margin-right: 45px;
+    margin-right: 20px;
     color: $text-02;
   }
   &__search {
     position: relative;
   }
-  &__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $black;
-    i {
-      width: auto;
-      height: auto;
-      margin-right: em(20);
-    }
-  }
-  .fa-sun {
-    color: #ee5007;
-  }
+
   &__searchbox {
     width: 300px;
     height: 37px;
@@ -47,6 +37,7 @@
     background-color: $search-bar;
   }
   &__notification {
+    display: none;
     font-size: 12px;
     position: absolute;
     background: #fff;
@@ -72,5 +63,92 @@
     border-left: 2px solid black;
     margin-top: 10px;
     margin-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .nav {
+    display: block;
+    background-color: $red;
+    height: 105vh;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: transform 600ms ease-in-out;
+
+    &.slide-in {
+      transform: translateX(0%);
+      transition: transform 600ms ease-in-out;
+    }
+
+    &__list {
+      display: block;
+      box-shadow: none;
+      padding: 0;
+    }
+    &__logo {
+      display: none;
+      align-self: center;
+    }
+    &__item {
+      align-self: center;
+      position: absolute;
+      top: 135px;
+      left: 35px;
+    }
+    &__text {
+      display: block;
+      margin-bottom: 25px;
+      color: $text-02;
+    }
+    &__search {
+      display: none;
+    }
+
+    &__searchbox {
+      display: none;
+    }
+    &__notification {
+      display: none;
+    }
+    .fa-magnifying-glass {
+      display: none;
+    }
+    .fa-basket-shopping {
+      display: none;
+    }
+    &__menu {
+      z-index: 9999;
+      position: fixed;
+      visibility: visible;
+      top: 32px;
+      left: 90%;
+
+      &.open {
+        span:first-child {
+          transform: rotate(45deg);
+        }
+        span:nth-child(2) {
+          opacity: 0;
+        }
+        span:last-child {
+          transform: rotate(-45deg);
+        }
+      }
+      span {
+        display: block;
+        width: 26px;
+        height: 2px;
+        background-color: $text-02;
+        transform-origin: 4px 1px;
+        transition: all 300ms ease-in-out;
+
+        &:not(:last-child) {
+          margin-bottom: 4px;
+        }
+      }
+    }
   }
 }

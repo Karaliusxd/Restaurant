@@ -53,6 +53,7 @@
     border-radius: 10px;
     border: none;
     margin-left: 160px;
+    cursor: pointer;
   }
 
   &__text {
@@ -114,5 +115,42 @@
     background-color: $red;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .home {
+    display: block;
+
+    &__delivery {
+      margin-left: 15px;
+      p {
+      }
+    }
+    &__typography {
+      text-align: left;
+      width: auto;
+    }
+    &__title {
+      margin-left: 15px;
+      font-size: $title-mobile-L;
+      span {
+      }
+    }
+    &__description {
+      margin-left: 15px;
+    }
+    &__btn {
+      margin-left: 15px;
+    }
+
+    &__text {
+      display: none;
+    }
+
+    &__wrapper {
+      display: none;
+    }
   }
 }
